@@ -1,0 +1,703 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AuxiliarModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Mis_ar_product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ACCOUNT_NUM" Type="varchar" MaxLength="20" />
+          <Property Name="CONTRACT_TERM" Type="int" />
+          <Property Name="CPS_NAME" Type="varchar" MaxLength="20" />
+          <Property Name="CREDIT_LIMIT_MNY" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CUSTOMER_REF" Type="varchar" MaxLength="20" />
+          <Property Name="DESCRIPTION" Type="varchar" MaxLength="255" />
+          <Property Name="DISCOUNT_MNY_BALANCE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="DISCOUNT_NAME" Type="varchar" MaxLength="40" />
+          <Property Name="DISCOUNT_PERIOD_END" Type="date" />
+          <Property Name="DISCOUNT_PERIOD_START" Type="date" />
+          <Property Name="END_DATE" Type="date" />
+          <Property Name="ESN" Type="varchar" MaxLength="40" />
+          <Property Name="EVENT_SOURCE" Type="varchar" MaxLength="40" />
+          <Property Name="EVENT_SOURCE_LABEL" Type="varchar" MaxLength="40" />
+          <Property Name="EVENT_SOURCE_TXT" Type="varchar" MaxLength="255" />
+          <Property Name="EXTENDED_STATUS" Type="varchar" MaxLength="20" />
+          <Property Name="IMEI" Type="varchar" MaxLength="40" />
+          <Property Name="IMEI_ACTUAL" Type="varchar" MaxLength="40" />
+          <Property Name="IMEI_REAL" Type="varchar" MaxLength="40" />
+          <Property Name="IMSI" Type="varchar" MaxLength="40" />
+          <Property Name="LOCATION_ID" Type="varchar" MaxLength="40" />
+          <Property Name="OFFER_TYPE" Type="varchar" MaxLength="40" />
+          <Property Name="ONE_OFF_NUMBER" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="OVERIDE_START_DATE" Type="date" />
+          <Property Name="OVERRIDE_END_DATE" Type="date" />
+          <Property Name="OVERRIDE_PRICE_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PARENT_PRODUCT_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PLAN_END_DATE" Type="varchar" MaxLength="40" />
+          <Property Name="PLAN_START_DATE" Type="date" />
+          <Property Name="PRODUCT_LABEL" Type="varchar" MaxLength="240" />
+          <Property Name="PRODUCT_NAME" Type="varchar" MaxLength="255" />
+          <Property Name="PRODUCT_QUANTITY" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PRODUCT_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PROVIDER_TYPE" Type="varchar" MaxLength="40" />
+          <Property Name="RATING_TARIFF_NAME" Type="varchar" MaxLength="40" />
+          <Property Name="REASON_DESC" Type="varchar" MaxLength="120" />
+          <Property Name="RECURRING_NUMBER" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SOURCE_ID" Type="varchar" MaxLength="40" />
+          <Property Name="SOURCE_TIME_STAMP" Type="varchar" MaxLength="40" />
+          <Property Name="START_DATE" Type="date" />
+          <Property Name="STATUS_CHANGE_REASON" Type="varchar" MaxLength="120" />
+          <Property Name="SUSP_NUMBER" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="SUSP_RECUR_NUMBER" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TARIFF_NAME" Type="varchar" MaxLength="40" />
+          <Property Name="TERMINATION_NUMBER" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="THRID_PARTY_CHARGE_BOO" Type="varchar" MaxLength="1" />
+          <Property Name="CREATED_BY" Type="varchar" MaxLength="100" />
+          <Property Name="CREATED_WHEN" Type="date" />
+          <Property Name="MODIFIED_BY" Type="varchar" MaxLength="100" />
+          <Property Name="MODIFIED_WHEN" Type="date" />
+          <Property Name="TOP_PRODUCT_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_1" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_2" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_3" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_4" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_5" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NUM_PARA_DESVIO_DE_LLAM_INCOND" Type="varchar" MaxLength="255" />
+          <Property Name="CALL_WAITING" Type="varchar" MaxLength="1" />
+          <Property Name="CLIP" Type="varchar" MaxLength="1" />
+          <Property Name="CLIR" Type="varchar" MaxLength="1" />
+          <Property Name="CSR_ID" Type="varchar" MaxLength="255" />
+          <Property Name="APN_POR_DEFECTO" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DIAL_UP" Type="varchar" MaxLength="1" />
+          <Property Name="EQUIPMENT" Type="varchar" MaxLength="40" />
+          <Property Name="ICCID" Type="decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE" Type="varchar" MaxLength="200" />
+          <Property Name="LDI" Type="varchar" MaxLength="1" />
+          <Property Name="LDI_SUSPICIOUS_DESTINATIONS" Type="varchar" MaxLength="1" />
+          <Property Name="LTE_SERVICES" Type="varchar" MaxLength="1" />
+          <Property Name="MMS" Type="varchar" MaxLength="1" />
+          <Property Name="MSISDN" Type="varchar" MaxLength="200" />
+          <Property Name="MULTIPARTY_CALL" Type="varchar" MaxLength="1" />
+          <Property Name="ONLY_MT_SMS" Type="varchar" MaxLength="1" />
+          <Property Name="PARENT_MSISDN" Type="varchar" MaxLength="255" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="255" />
+          <Property Name="SIM_CARD_LOST" Type="varchar" MaxLength="1" />
+          <Property Name="SIM_LTE_SUPPORT" Type="varchar" MaxLength="1" />
+          <Property Name="SUSPEND_BY_COLLECTION" Type="varchar" MaxLength="200" />
+          <Property Name="SUSPEND_REASON" Type="varchar" MaxLength="255" />
+          <Property Name="VIDEO_CALLS" Type="varchar" MaxLength="1" />
+          <Property Name="TRANSLATION_TYPE" Type="varchar" MaxLength="255" />
+          <Property Name="THRESHOLD_BEFORE_INTERRUPT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LOYALTY_REDEMPTION_ALLOWED" Type="int" />
+          <Property Name="EVENT_ITEMIZATION" Type="varchar" MaxLength="30" />
+          <Property Name="NC_PRODUCT_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NC_PARENT_PRODUCT_SEQ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_6" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AA_OBJ_ID" Type="varchar" MaxLength="255" />
+          <Property Name="AA_TOPUP_ORIGIN" Type="varchar" MaxLength="255" />
+          <Property Name="CONTACTOS" Type="varchar" MaxLength="255" />
+          <Property Name="DURACION_DEL_CONTRATO" Type="int" />
+          <Property Name="NOMBRE_DE_USR" Type="varchar" MaxLength="255" />
+          <Property Name="SERVICE_LEVEL" Type="varchar" MaxLength="255" />
+          <Property Name="TIPO_DE_SERV_BLACKBERRY" Type="varchar" MaxLength="255" />
+          <Property Name="PRESTAMO_SOS_DISPONIBLE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="INTERNET_UMT_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WAP_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WEB_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WWW_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="AA_GROUP_ID" Type="varchar" MaxLength="255" />
+          <Property Name="AA_LIMIT_EVENT_FLAG" Type="varchar" MaxLength="255" />
+          <Property Name="AA_LIMIT_EVENT_FLAG_LINE" Type="varchar" MaxLength="255" />
+          <Property Name="AA_SPEND_LIMIT_AMOUNT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_LIMIT_AMOUNT_LINE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_THRESHOLD" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_THRESHOLD_LINE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="AA_THRESHOLD_EVENT_FLAG" Type="varchar" MaxLength="255" />
+          <Property Name="AA_THRESHOLD_EVENT_FLAG_LINE" Type="varchar" MaxLength="255" />
+          <Property Name="CALLED_ENTERPRISE_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CALLED_ENTERPRISE_NAME" Type="varchar" MaxLength="255" />
+          <Property Name="COMENTARIOS" Type="varchar" MaxLength="255" />
+          <Property Name="COMPANY_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ENLACE_DE_DAT_FIJ_CONTRAT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ENTERPRISE_ID" Type="varchar" MaxLength="255" />
+          <Property Name="ENTERPRISE_NAME" Type="varchar" MaxLength="255" />
+          <Property Name="IP_ORIGEN" Type="varchar" MaxLength="255" />
+          <Property Name="RPV_GROUP_ID" Type="varchar" MaxLength="255" />
+          <Property Name="MIEMBRO_DE_VPN_MOVIL" Type="varchar" MaxLength="255" />
+          <Property Name="APN_VPN_MOVIL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="PRECIO_TRAFICO_EXCEDENTE" Type="varchar" MaxLength="255" />
+          <Property Name="REQUIERE_IP_FIJA" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="REQUIERE_TUNEL_IPSEC" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRIBE_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TRIBE_RPV_NAME" Type="varchar" MaxLength="255" />
+          <Property Name="VPN_MOVIL_A_MOVIL" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_7" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="BLACKBERRY_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LAST_SOSLOAN_THRESHOLD" Type="varchar" MaxLength="40" />
+          <Property Name="ANCHO_DE_BANDA" Type="varchar" MaxLength="255" />
+          <Property Name="ANCHO_DE_BANDA_PUNTO" Type="varchar" MaxLength="255" />
+          <Property Name="BASE_DE_DATOS" Type="varchar" MaxLength="255" />
+          <Property Name="CANALES_HABILITADOS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_DE_IP" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_DE_LICENC_CONTRAT" Type="varchar" MaxLength="255" />
+          <Property Name="CANTIDAD_DE_ESTUDIOS_POR_MES" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_SMS_ENV_POR_EMPR" Type="varchar" MaxLength="255" />
+          <Property Name="CAPA_DE_INTERCONEXION" Type="varchar" MaxLength="255" />
+          <Property Name="CASILLAS_DE_CORREO" Type="varchar" MaxLength="255" />
+          <Property Name="CENTRAL" Type="varchar" MaxLength="255" />
+          <Property Name="COBRO_POR_FUERA_DE_LA_TMM" Type="varchar" MaxLength="255" />
+          <Property Name="DATOS_ADICIONALES" Type="varchar" MaxLength="255" />
+          <Property Name="DIRECCION_DE_SERVICIO" Type="varchar" MaxLength="255" />
+          <Property Name="DOMINIO" Type="varchar" MaxLength="255" />
+          <Property Name="DOMINIO_REGISTRO_MOVISTAR" Type="varchar" MaxLength="255" />
+          <Property Name="ESPACIO_EN_DISCO" Type="varchar" MaxLength="255" />
+          <Property Name="ESPACIO_EN_RACK" Type="varchar" MaxLength="255" />
+          <Property Name="HABIL_PARA_SEGM_CORPORAT" Type="varchar" MaxLength="255" />
+          <Property Name="IP_REG_DNS" Type="varchar" MaxLength="255" />
+          <Property Name="INFORM_SOBRE_EL_SERV" Type="varchar" MaxLength="255" />
+          <Property Name="NUMERO_CORTO" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NUMERO_I800" Type="varchar" MaxLength="255" />
+          <Property Name="NUMERO_TRONCAL" Type="varchar" MaxLength="255" />
+          <Property Name="PAGA_POR_LOS_SMS_ENTRANTES" Type="varchar" MaxLength="255" />
+          <Property Name="PAIS_I800" Type="varchar" MaxLength="255" />
+          <Property Name="PERIODO_DE_RENOVACION" Type="varchar" MaxLength="255" />
+          <Property Name="PLATAFORMA" Type="varchar" MaxLength="255" />
+          <Property Name="PRECIO_SMS_EXCEDENTE" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PRECIO_EN_MO" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PRECIO_EN_MT" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="PROTOCOLO" Type="varchar" MaxLength="255" />
+          <Property Name="PROVEEDOR" Type="varchar" MaxLength="255" />
+          <Property Name="QOS_DATOS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="QOS_VIDEO" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="QOS_VOZ" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="RECURSOS" Type="varchar" MaxLength="255" />
+          <Property Name="TERMINACION_LOCAL_CLIENTE" Type="varchar" MaxLength="255" />
+          <Property Name="TIPO_DE_LICENCIAS_CONTRAT" Type="varchar" MaxLength="255" />
+          <Property Name="TIPO_DE_SERV_FIJ" Type="varchar" MaxLength="255" />
+          <Property Name="TIPO_DE_RECURSO" Type="varchar" MaxLength="255" />
+          <Property Name="PARTNER_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="ROAMING_STATUS" Type="varchar" MaxLength="255" />
+          <Property Name="SPECIAL_NO_1930" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SOURCE_NUMBER" Type="varchar" MaxLength="255" />
+          <Property Name="PRODUCT_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="SUSP_BY_COLL_FIJ" Type="int" />
+          <Property Name="SUSP_BY_LIMITS_FIJ" Type="int" />
+          <Property Name="DEST_NUM_FIJ" Type="varchar" MaxLength="255" />
+          <Property Name="ACTIVATION_STATUS" Type="varchar" MaxLength="255" />
+          <Property Name="DOC_NUMBER_LINE" Type="varchar" MaxLength="255" />
+          <Property Name="EQUIPMENT_INFO" Type="varchar" MaxLength="2000" />
+          <Property Name="ROUTING_NUMBER" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DOMAIN_NAME_PROVIDER" Type="varchar" MaxLength="255" />
+          <Property Name="LAST_RENEWAL_DATE" Type="date" />
+          <Property Name="FINAL_ACTIVATION_DATE" Type="date" />
+          <Property Name="APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="USE_STATIC_IP" Type="smallint" />
+          <Property Name="STATIC_IP_ADDR" Type="varchar" MaxLength="50" />
+          <Property Name="QOS" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DISCONNECT_REASON" Type="varchar" MaxLength="50" />
+          <Property Name="NUMBER_OF_LINES" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="RAZON_DISCON_EMPR" Type="varchar" MaxLength="50" />
+          <Property Name="ROAM_PERFIL_ALERTA" Type="varchar" MaxLength="50" />
+          <Property Name="SPEND_LIMIT" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="NUMERO_CORTO_PARA_RPV" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="M2M_APN" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="LINEA_MOVIL_GROUP_ID" Type="varchar" MaxLength="255" />
+          <Property Name="AA_TRIBE_ID" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="TARIFF_ID" Type="int" />
+          <Property Name="RPV_MEMBER_PROFILE" Type="varchar" MaxLength="50" />
+          <Property Name="RPVPERFIL_PARA_EMPRESA" Type="varchar" MaxLength="50" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Universo_NC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="TOP_PRODUCT" Type="float" />
+          <Property Name="L1" Type="float" />
+          <Property Name="L2" Type="float" />
+          <Property Name="L3" Type="float" />
+          <Property Name="L4" Type="nvarchar" MaxLength="255" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AuxiliarModelStoreContainer">
+          <EntitySet Name="Mis_ar_product" EntityType="Self.Mis_ar_product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Universo_NC" EntityType="Self.Universo_NC" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AuxiliarModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Mis_ar_product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ACCOUNT_NUM" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CONTRACT_TERM" Type="Int32" />
+          <Property Name="CPS_NAME" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="CREDIT_LIMIT_MNY" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CUSTOMER_REF" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DESCRIPTION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DISCOUNT_MNY_BALANCE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="DISCOUNT_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="DISCOUNT_PERIOD_END" Type="DateTime" Precision="0" />
+          <Property Name="DISCOUNT_PERIOD_START" Type="DateTime" Precision="0" />
+          <Property Name="END_DATE" Type="DateTime" Precision="0" />
+          <Property Name="ESN" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EVENT_SOURCE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EVENT_SOURCE_LABEL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EVENT_SOURCE_TXT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EXTENDED_STATUS" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="IMEI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="IMEI_ACTUAL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="IMEI_REAL" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="IMSI" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="LOCATION_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="OFFER_TYPE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ONE_OFF_NUMBER" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="OVERIDE_START_DATE" Type="DateTime" Precision="0" />
+          <Property Name="OVERRIDE_END_DATE" Type="DateTime" Precision="0" />
+          <Property Name="OVERRIDE_PRICE_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PARENT_PRODUCT_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PLAN_END_DATE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="PLAN_START_DATE" Type="DateTime" Precision="0" />
+          <Property Name="PRODUCT_LABEL" Type="String" MaxLength="240" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCT_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCT_QUANTITY" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PRODUCT_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PROVIDER_TYPE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="RATING_TARIFF_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="REASON_DESC" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="RECURRING_NUMBER" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SOURCE_ID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="SOURCE_TIME_STAMP" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="START_DATE" Type="DateTime" Precision="0" />
+          <Property Name="STATUS_CHANGE_REASON" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+          <Property Name="SUSP_NUMBER" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="SUSP_RECUR_NUMBER" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TARIFF_NAME" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="TERMINATION_NUMBER" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="THRID_PARTY_CHARGE_BOO" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CREATED_BY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CREATED_WHEN" Type="DateTime" Precision="0" />
+          <Property Name="MODIFIED_BY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MODIFIED_WHEN" Type="DateTime" Precision="0" />
+          <Property Name="TOP_PRODUCT_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_1" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_2" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_3" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_4" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_5" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NUM_PARA_DESVIO_DE_LLAM_INCOND" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CALL_WAITING" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CLIP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CLIR" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="CSR_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="APN_POR_DEFECTO" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DIAL_UP" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="EQUIPMENT" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ICCID" Type="Decimal" Precision="38" Scale="0" />
+          <Property Name="LANGUAGE" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="LDI" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="LDI_SUSPICIOUS_DESTINATIONS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="LTE_SERVICES" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="MMS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="MSISDN" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="MULTIPARTY_CALL" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="ONLY_MT_SMS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="PARENT_MSISDN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SIM_CARD_LOST" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SIM_LTE_SUPPORT" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="SUSPEND_BY_COLLECTION" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="SUSPEND_REASON" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VIDEO_CALLS" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="TRANSLATION_TYPE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="THRESHOLD_BEFORE_INTERRUPT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LOYALTY_REDEMPTION_ALLOWED" Type="Int32" />
+          <Property Name="EVENT_ITEMIZATION" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="NC_PRODUCT_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NC_PARENT_PRODUCT_SEQ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_6" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AA_OBJ_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_TOPUP_ORIGIN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CONTACTOS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DURACION_DEL_CONTRATO" Type="Int32" />
+          <Property Name="NOMBRE_DE_USR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SERVICE_LEVEL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TIPO_DE_SERV_BLACKBERRY" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PRESTAMO_SOS_DISPONIBLE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="INTERNET_UMT_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WAP_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WEB_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="INTERNET_WWW_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="AA_GROUP_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_LIMIT_EVENT_FLAG" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_LIMIT_EVENT_FLAG_LINE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_SPEND_LIMIT_AMOUNT" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_LIMIT_AMOUNT_LINE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_THRESHOLD" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AA_SPEND_THRESHOLD_LINE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="AA_THRESHOLD_EVENT_FLAG" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_THRESHOLD_EVENT_FLAG_LINE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CALLED_ENTERPRISE_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CALLED_ENTERPRISE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="COMENTARIOS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="COMPANY_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ENLACE_DE_DAT_FIJ_CONTRAT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ENTERPRISE_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ENTERPRISE_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IP_ORIGEN" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="RPV_GROUP_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="MIEMBRO_DE_VPN_MOVIL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="APN_VPN_MOVIL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="PRECIO_TRAFICO_EXCEDENTE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="REQUIERE_IP_FIJA" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="REQUIERE_TUNEL_IPSEC" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRIBE_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TRIBE_RPV_NAME" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="VPN_MOVIL_A_MOVIL" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="FAFORITE_NUM_7" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="BLACKBERRY_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LAST_SOSLOAN_THRESHOLD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ANCHO_DE_BANDA" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ANCHO_DE_BANDA_PUNTO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="BASE_DE_DATOS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CANALES_HABILITADOS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_DE_IP" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_DE_LICENC_CONTRAT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CANTIDAD_DE_ESTUDIOS_POR_MES" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="CANTIDAD_SMS_ENV_POR_EMPR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CAPA_DE_INTERCONEXION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CASILLAS_DE_CORREO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="CENTRAL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="COBRO_POR_FUERA_DE_LA_TMM" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DATOS_ADICIONALES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DIRECCION_DE_SERVICIO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DOMINIO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DOMINIO_REGISTRO_MOVISTAR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ESPACIO_EN_DISCO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ESPACIO_EN_RACK" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="HABIL_PARA_SEGM_CORPORAT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IP_REG_DNS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="INFORM_SOBRE_EL_SERV" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO_CORTO" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NUMERO_I800" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="NUMERO_TRONCAL" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PAGA_POR_LOS_SMS_ENTRANTES" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PAIS_I800" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PERIODO_DE_RENOVACION" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PLATAFORMA" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PRECIO_SMS_EXCEDENTE" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PRECIO_EN_MO" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PRECIO_EN_MT" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="PROTOCOLO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PROVEEDOR" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="QOS_DATOS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="QOS_VIDEO" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="QOS_VOZ" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="RECURSOS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TERMINACION_LOCAL_CLIENTE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TIPO_DE_LICENCIAS_CONTRAT" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TIPO_DE_SERV_FIJ" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="TIPO_DE_RECURSO" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PARTNER_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="ROAMING_STATUS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="SPECIAL_NO_1930" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SOURCE_NUMBER" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="PRODUCT_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="SUSP_BY_COLL_FIJ" Type="Int32" />
+          <Property Name="SUSP_BY_LIMITS_FIJ" Type="Int32" />
+          <Property Name="DEST_NUM_FIJ" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="ACTIVATION_STATUS" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="DOC_NUMBER_LINE" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="EQUIPMENT_INFO" Type="String" MaxLength="2000" FixedLength="false" Unicode="false" />
+          <Property Name="ROUTING_NUMBER" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DOMAIN_NAME_PROVIDER" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="LAST_RENEWAL_DATE" Type="DateTime" Precision="0" />
+          <Property Name="FINAL_ACTIVATION_DATE" Type="DateTime" Precision="0" />
+          <Property Name="APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="USE_STATIC_IP" Type="Int16" />
+          <Property Name="STATIC_IP_ADDR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="QOS" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DISCONNECT_REASON" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NUMBER_OF_LINES" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="RAZON_DISCON_EMPR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ROAM_PERFIL_ALERTA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="SPEND_LIMIT" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="NUMERO_CORTO_PARA_RPV" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="M2M_APN" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="LINEA_MOVIL_GROUP_ID" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="AA_TRIBE_ID" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="TARIFF_ID" Type="Int32" />
+          <Property Name="RPV_MEMBER_PROFILE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="RPVPERFIL_PARA_EMPRESA" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="Universo_NC">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="TOP_PRODUCT" Type="Double" />
+          <Property Name="L1" Type="Double" />
+          <Property Name="L2" Type="Double" />
+          <Property Name="L3" Type="Double" />
+          <Property Name="L4" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityContainer Name="AuxiliarEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Mis_ar_product" EntityType="Self.Mis_ar_product" />
+          <EntitySet Name="Universo_NC" EntityType="Self.Universo_NC" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AuxiliarModelStoreContainer" CdmEntityContainer="AuxiliarEntities">
+          <EntitySetMapping Name="Mis_ar_product">
+            <EntityTypeMapping TypeName="AuxiliarModel.Mis_ar_product">
+              <MappingFragment StoreEntitySet="Mis_ar_product">
+                <ScalarProperty Name="ACCOUNT_NUM" ColumnName="ACCOUNT_NUM" />
+                <ScalarProperty Name="CONTRACT_TERM" ColumnName="CONTRACT_TERM" />
+                <ScalarProperty Name="CPS_NAME" ColumnName="CPS_NAME" />
+                <ScalarProperty Name="CREDIT_LIMIT_MNY" ColumnName="CREDIT_LIMIT_MNY" />
+                <ScalarProperty Name="CUSTOMER_REF" ColumnName="CUSTOMER_REF" />
+                <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+                <ScalarProperty Name="DISCOUNT_MNY_BALANCE" ColumnName="DISCOUNT_MNY_BALANCE" />
+                <ScalarProperty Name="DISCOUNT_NAME" ColumnName="DISCOUNT_NAME" />
+                <ScalarProperty Name="DISCOUNT_PERIOD_END" ColumnName="DISCOUNT_PERIOD_END" />
+                <ScalarProperty Name="DISCOUNT_PERIOD_START" ColumnName="DISCOUNT_PERIOD_START" />
+                <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+                <ScalarProperty Name="ESN" ColumnName="ESN" />
+                <ScalarProperty Name="EVENT_SOURCE" ColumnName="EVENT_SOURCE" />
+                <ScalarProperty Name="EVENT_SOURCE_LABEL" ColumnName="EVENT_SOURCE_LABEL" />
+                <ScalarProperty Name="EVENT_SOURCE_TXT" ColumnName="EVENT_SOURCE_TXT" />
+                <ScalarProperty Name="EXTENDED_STATUS" ColumnName="EXTENDED_STATUS" />
+                <ScalarProperty Name="IMEI" ColumnName="IMEI" />
+                <ScalarProperty Name="IMEI_ACTUAL" ColumnName="IMEI_ACTUAL" />
+                <ScalarProperty Name="IMEI_REAL" ColumnName="IMEI_REAL" />
+                <ScalarProperty Name="IMSI" ColumnName="IMSI" />
+                <ScalarProperty Name="LOCATION_ID" ColumnName="LOCATION_ID" />
+                <ScalarProperty Name="OFFER_TYPE" ColumnName="OFFER_TYPE" />
+                <ScalarProperty Name="ONE_OFF_NUMBER" ColumnName="ONE_OFF_NUMBER" />
+                <ScalarProperty Name="OVERIDE_START_DATE" ColumnName="OVERIDE_START_DATE" />
+                <ScalarProperty Name="OVERRIDE_END_DATE" ColumnName="OVERRIDE_END_DATE" />
+                <ScalarProperty Name="OVERRIDE_PRICE_SEQ" ColumnName="OVERRIDE_PRICE_SEQ" />
+                <ScalarProperty Name="PARENT_PRODUCT_SEQ" ColumnName="PARENT_PRODUCT_SEQ" />
+                <ScalarProperty Name="PLAN_END_DATE" ColumnName="PLAN_END_DATE" />
+                <ScalarProperty Name="PLAN_START_DATE" ColumnName="PLAN_START_DATE" />
+                <ScalarProperty Name="PRODUCT_LABEL" ColumnName="PRODUCT_LABEL" />
+                <ScalarProperty Name="PRODUCT_NAME" ColumnName="PRODUCT_NAME" />
+                <ScalarProperty Name="PRODUCT_QUANTITY" ColumnName="PRODUCT_QUANTITY" />
+                <ScalarProperty Name="PRODUCT_SEQ" ColumnName="PRODUCT_SEQ" />
+                <ScalarProperty Name="PROVIDER_TYPE" ColumnName="PROVIDER_TYPE" />
+                <ScalarProperty Name="RATING_TARIFF_NAME" ColumnName="RATING_TARIFF_NAME" />
+                <ScalarProperty Name="REASON_DESC" ColumnName="REASON_DESC" />
+                <ScalarProperty Name="RECURRING_NUMBER" ColumnName="RECURRING_NUMBER" />
+                <ScalarProperty Name="SOURCE_ID" ColumnName="SOURCE_ID" />
+                <ScalarProperty Name="SOURCE_TIME_STAMP" ColumnName="SOURCE_TIME_STAMP" />
+                <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+                <ScalarProperty Name="STATUS_CHANGE_REASON" ColumnName="STATUS_CHANGE_REASON" />
+                <ScalarProperty Name="SUSP_NUMBER" ColumnName="SUSP_NUMBER" />
+                <ScalarProperty Name="SUSP_RECUR_NUMBER" ColumnName="SUSP_RECUR_NUMBER" />
+                <ScalarProperty Name="TARIFF_NAME" ColumnName="TARIFF_NAME" />
+                <ScalarProperty Name="TERMINATION_NUMBER" ColumnName="TERMINATION_NUMBER" />
+                <ScalarProperty Name="THRID_PARTY_CHARGE_BOO" ColumnName="THRID_PARTY_CHARGE_BOO" />
+                <ScalarProperty Name="CREATED_BY" ColumnName="CREATED_BY" />
+                <ScalarProperty Name="CREATED_WHEN" ColumnName="CREATED_WHEN" />
+                <ScalarProperty Name="MODIFIED_BY" ColumnName="MODIFIED_BY" />
+                <ScalarProperty Name="MODIFIED_WHEN" ColumnName="MODIFIED_WHEN" />
+                <ScalarProperty Name="TOP_PRODUCT_SEQ" ColumnName="TOP_PRODUCT_SEQ" />
+                <ScalarProperty Name="FAFORITE_NUM_1" ColumnName="FAFORITE_NUM_1" />
+                <ScalarProperty Name="FAFORITE_NUM_2" ColumnName="FAFORITE_NUM_2" />
+                <ScalarProperty Name="FAFORITE_NUM_3" ColumnName="FAFORITE_NUM_3" />
+                <ScalarProperty Name="FAFORITE_NUM_4" ColumnName="FAFORITE_NUM_4" />
+                <ScalarProperty Name="FAFORITE_NUM_5" ColumnName="FAFORITE_NUM_5" />
+                <ScalarProperty Name="NUM_PARA_DESVIO_DE_LLAM_INCOND" ColumnName="NUM_PARA_DESVIO_DE_LLAM_INCOND" />
+                <ScalarProperty Name="CALL_WAITING" ColumnName="CALL_WAITING" />
+                <ScalarProperty Name="CLIP" ColumnName="CLIP" />
+                <ScalarProperty Name="CLIR" ColumnName="CLIR" />
+                <ScalarProperty Name="CSR_ID" ColumnName="CSR_ID" />
+                <ScalarProperty Name="APN_POR_DEFECTO" ColumnName="APN_POR_DEFECTO" />
+                <ScalarProperty Name="DIAL_UP" ColumnName="DIAL_UP" />
+                <ScalarProperty Name="EQUIPMENT" ColumnName="EQUIPMENT" />
+                <ScalarProperty Name="ICCID" ColumnName="ICCID" />
+                <ScalarProperty Name="LANGUAGE" ColumnName="LANGUAGE" />
+                <ScalarProperty Name="LDI" ColumnName="LDI" />
+                <ScalarProperty Name="LDI_SUSPICIOUS_DESTINATIONS" ColumnName="LDI_SUSPICIOUS_DESTINATIONS" />
+                <ScalarProperty Name="LTE_SERVICES" ColumnName="LTE_SERVICES" />
+                <ScalarProperty Name="MMS" ColumnName="MMS" />
+                <ScalarProperty Name="MSISDN" ColumnName="MSISDN" />
+                <ScalarProperty Name="MULTIPARTY_CALL" ColumnName="MULTIPARTY_CALL" />
+                <ScalarProperty Name="ONLY_MT_SMS" ColumnName="ONLY_MT_SMS" />
+                <ScalarProperty Name="PARENT_MSISDN" ColumnName="PARENT_MSISDN" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="SIM_CARD_LOST" ColumnName="SIM_CARD_LOST" />
+                <ScalarProperty Name="SIM_LTE_SUPPORT" ColumnName="SIM_LTE_SUPPORT" />
+                <ScalarProperty Name="SUSPEND_BY_COLLECTION" ColumnName="SUSPEND_BY_COLLECTION" />
+                <ScalarProperty Name="SUSPEND_REASON" ColumnName="SUSPEND_REASON" />
+                <ScalarProperty Name="VIDEO_CALLS" ColumnName="VIDEO_CALLS" />
+                <ScalarProperty Name="TRANSLATION_TYPE" ColumnName="TRANSLATION_TYPE" />
+                <ScalarProperty Name="THRESHOLD_BEFORE_INTERRUPT" ColumnName="THRESHOLD_BEFORE_INTERRUPT" />
+                <ScalarProperty Name="LOYALTY_REDEMPTION_ALLOWED" ColumnName="LOYALTY_REDEMPTION_ALLOWED" />
+                <ScalarProperty Name="EVENT_ITEMIZATION" ColumnName="EVENT_ITEMIZATION" />
+                <ScalarProperty Name="NC_PRODUCT_SEQ" ColumnName="NC_PRODUCT_SEQ" />
+                <ScalarProperty Name="NC_PARENT_PRODUCT_SEQ" ColumnName="NC_PARENT_PRODUCT_SEQ" />
+                <ScalarProperty Name="FAFORITE_NUM_6" ColumnName="FAFORITE_NUM_6" />
+                <ScalarProperty Name="AA_OBJ_ID" ColumnName="AA_OBJ_ID" />
+                <ScalarProperty Name="AA_TOPUP_ORIGIN" ColumnName="AA_TOPUP_ORIGIN" />
+                <ScalarProperty Name="CONTACTOS" ColumnName="CONTACTOS" />
+                <ScalarProperty Name="DURACION_DEL_CONTRATO" ColumnName="DURACION_DEL_CONTRATO" />
+                <ScalarProperty Name="NOMBRE_DE_USR" ColumnName="NOMBRE_DE_USR" />
+                <ScalarProperty Name="SERVICE_LEVEL" ColumnName="SERVICE_LEVEL" />
+                <ScalarProperty Name="TIPO_DE_SERV_BLACKBERRY" ColumnName="TIPO_DE_SERV_BLACKBERRY" />
+                <ScalarProperty Name="PRESTAMO_SOS_DISPONIBLE" ColumnName="PRESTAMO_SOS_DISPONIBLE" />
+                <ScalarProperty Name="INTERNET_UMT_APN" ColumnName="INTERNET_UMT_APN" />
+                <ScalarProperty Name="INTERNET_WAP_APN" ColumnName="INTERNET_WAP_APN" />
+                <ScalarProperty Name="INTERNET_WEB_APN" ColumnName="INTERNET_WEB_APN" />
+                <ScalarProperty Name="INTERNET_WWW_APN" ColumnName="INTERNET_WWW_APN" />
+                <ScalarProperty Name="AA_GROUP_ID" ColumnName="AA_GROUP_ID" />
+                <ScalarProperty Name="AA_LIMIT_EVENT_FLAG" ColumnName="AA_LIMIT_EVENT_FLAG" />
+                <ScalarProperty Name="AA_LIMIT_EVENT_FLAG_LINE" ColumnName="AA_LIMIT_EVENT_FLAG_LINE" />
+                <ScalarProperty Name="AA_SPEND_LIMIT_AMOUNT" ColumnName="AA_SPEND_LIMIT_AMOUNT" />
+                <ScalarProperty Name="AA_SPEND_LIMIT_AMOUNT_LINE" ColumnName="AA_SPEND_LIMIT_AMOUNT_LINE" />
+                <ScalarProperty Name="AA_SPEND_THRESHOLD" ColumnName="AA_SPEND_THRESHOLD" />
+                <ScalarProperty Name="AA_SPEND_THRESHOLD_LINE" ColumnName="AA_SPEND_THRESHOLD_LINE" />
+                <ScalarProperty Name="AA_THRESHOLD_EVENT_FLAG" ColumnName="AA_THRESHOLD_EVENT_FLAG" />
+                <ScalarProperty Name="AA_THRESHOLD_EVENT_FLAG_LINE" ColumnName="AA_THRESHOLD_EVENT_FLAG_LINE" />
+                <ScalarProperty Name="CALLED_ENTERPRISE_ID" ColumnName="CALLED_ENTERPRISE_ID" />
+                <ScalarProperty Name="CALLED_ENTERPRISE_NAME" ColumnName="CALLED_ENTERPRISE_NAME" />
+                <ScalarProperty Name="COMENTARIOS" ColumnName="COMENTARIOS" />
+                <ScalarProperty Name="COMPANY_ID" ColumnName="COMPANY_ID" />
+                <ScalarProperty Name="ENLACE_DE_DAT_FIJ_CONTRAT" ColumnName="ENLACE_DE_DAT_FIJ_CONTRAT" />
+                <ScalarProperty Name="ENTERPRISE_ID" ColumnName="ENTERPRISE_ID" />
+                <ScalarProperty Name="ENTERPRISE_NAME" ColumnName="ENTERPRISE_NAME" />
+                <ScalarProperty Name="IP_ORIGEN" ColumnName="IP_ORIGEN" />
+                <ScalarProperty Name="RPV_GROUP_ID" ColumnName="RPV_GROUP_ID" />
+                <ScalarProperty Name="MIEMBRO_DE_VPN_MOVIL" ColumnName="MIEMBRO_DE_VPN_MOVIL" />
+                <ScalarProperty Name="APN_VPN_MOVIL" ColumnName="APN_VPN_MOVIL" />
+                <ScalarProperty Name="PRECIO_TRAFICO_EXCEDENTE" ColumnName="PRECIO_TRAFICO_EXCEDENTE" />
+                <ScalarProperty Name="REQUIERE_IP_FIJA" ColumnName="REQUIERE_IP_FIJA" />
+                <ScalarProperty Name="REQUIERE_TUNEL_IPSEC" ColumnName="REQUIERE_TUNEL_IPSEC" />
+                <ScalarProperty Name="TRIBE_ID" ColumnName="TRIBE_ID" />
+                <ScalarProperty Name="TRIBE_RPV_NAME" ColumnName="TRIBE_RPV_NAME" />
+                <ScalarProperty Name="VPN_MOVIL_A_MOVIL" ColumnName="VPN_MOVIL_A_MOVIL" />
+                <ScalarProperty Name="FAFORITE_NUM_7" ColumnName="FAFORITE_NUM_7" />
+                <ScalarProperty Name="BLACKBERRY_APN" ColumnName="BLACKBERRY_APN" />
+                <ScalarProperty Name="LAST_SOSLOAN_THRESHOLD" ColumnName="LAST_SOSLOAN_THRESHOLD" />
+                <ScalarProperty Name="ANCHO_DE_BANDA" ColumnName="ANCHO_DE_BANDA" />
+                <ScalarProperty Name="ANCHO_DE_BANDA_PUNTO" ColumnName="ANCHO_DE_BANDA_PUNTO" />
+                <ScalarProperty Name="BASE_DE_DATOS" ColumnName="BASE_DE_DATOS" />
+                <ScalarProperty Name="CANALES_HABILITADOS" ColumnName="CANALES_HABILITADOS" />
+                <ScalarProperty Name="CANTIDAD_DE_IP" ColumnName="CANTIDAD_DE_IP" />
+                <ScalarProperty Name="CANTIDAD_DE_LICENC_CONTRAT" ColumnName="CANTIDAD_DE_LICENC_CONTRAT" />
+                <ScalarProperty Name="CANTIDAD_DE_ESTUDIOS_POR_MES" ColumnName="CANTIDAD_DE_ESTUDIOS_POR_MES" />
+                <ScalarProperty Name="CANTIDAD_SMS_ENV_POR_EMPR" ColumnName="CANTIDAD_SMS_ENV_POR_EMPR" />
+                <ScalarProperty Name="CAPA_DE_INTERCONEXION" ColumnName="CAPA_DE_INTERCONEXION" />
+                <ScalarProperty Name="CASILLAS_DE_CORREO" ColumnName="CASILLAS_DE_CORREO" />
+                <ScalarProperty Name="CENTRAL" ColumnName="CENTRAL" />
+                <ScalarProperty Name="COBRO_POR_FUERA_DE_LA_TMM" ColumnName="COBRO_POR_FUERA_DE_LA_TMM" />
+                <ScalarProperty Name="DATOS_ADICIONALES" ColumnName="DATOS_ADICIONALES" />
+                <ScalarProperty Name="DIRECCION_DE_SERVICIO" ColumnName="DIRECCION_DE_SERVICIO" />
+                <ScalarProperty Name="DOMINIO" ColumnName="DOMINIO" />
+                <ScalarProperty Name="DOMINIO_REGISTRO_MOVISTAR" ColumnName="DOMINIO_REGISTRO_MOVISTAR" />
+                <ScalarProperty Name="ESPACIO_EN_DISCO" ColumnName="ESPACIO_EN_DISCO" />
+                <ScalarProperty Name="ESPACIO_EN_RACK" ColumnName="ESPACIO_EN_RACK" />
+                <ScalarProperty Name="HABIL_PARA_SEGM_CORPORAT" ColumnName="HABIL_PARA_SEGM_CORPORAT" />
+                <ScalarProperty Name="IP_REG_DNS" ColumnName="IP_REG_DNS" />
+                <ScalarProperty Name="INFORM_SOBRE_EL_SERV" ColumnName="INFORM_SOBRE_EL_SERV" />
+                <ScalarProperty Name="NUMERO_CORTO" ColumnName="NUMERO_CORTO" />
+                <ScalarProperty Name="NUMERO_I800" ColumnName="NUMERO_I800" />
+                <ScalarProperty Name="NUMERO_TRONCAL" ColumnName="NUMERO_TRONCAL" />
+                <ScalarProperty Name="PAGA_POR_LOS_SMS_ENTRANTES" ColumnName="PAGA_POR_LOS_SMS_ENTRANTES" />
+                <ScalarProperty Name="PAIS_I800" ColumnName="PAIS_I800" />
+                <ScalarProperty Name="PERIODO_DE_RENOVACION" ColumnName="PERIODO_DE_RENOVACION" />
+                <ScalarProperty Name="PLATAFORMA" ColumnName="PLATAFORMA" />
+                <ScalarProperty Name="PRECIO_SMS_EXCEDENTE" ColumnName="PRECIO_SMS_EXCEDENTE" />
+                <ScalarProperty Name="PRECIO_EN_MO" ColumnName="PRECIO_EN_MO" />
+                <ScalarProperty Name="PRECIO_EN_MT" ColumnName="PRECIO_EN_MT" />
+                <ScalarProperty Name="PROTOCOLO" ColumnName="PROTOCOLO" />
+                <ScalarProperty Name="PROVEEDOR" ColumnName="PROVEEDOR" />
+                <ScalarProperty Name="QOS_DATOS" ColumnName="QOS_DATOS" />
+                <ScalarProperty Name="QOS_VIDEO" ColumnName="QOS_VIDEO" />
+                <ScalarProperty Name="QOS_VOZ" ColumnName="QOS_VOZ" />
+                <ScalarProperty Name="RECURSOS" ColumnName="RECURSOS" />
+                <ScalarProperty Name="TERMINACION_LOCAL_CLIENTE" ColumnName="TERMINACION_LOCAL_CLIENTE" />
+                <ScalarProperty Name="TIPO_DE_LICENCIAS_CONTRAT" ColumnName="TIPO_DE_LICENCIAS_CONTRAT" />
+                <ScalarProperty Name="TIPO_DE_SERV_FIJ" ColumnName="TIPO_DE_SERV_FIJ" />
+                <ScalarProperty Name="TIPO_DE_RECURSO" ColumnName="TIPO_DE_RECURSO" />
+                <ScalarProperty Name="PARTNER_ID" ColumnName="PARTNER_ID" />
+                <ScalarProperty Name="ROAMING_STATUS" ColumnName="ROAMING_STATUS" />
+                <ScalarProperty Name="SPECIAL_NO_1930" ColumnName="SPECIAL_NO_1930" />
+                <ScalarProperty Name="SOURCE_NUMBER" ColumnName="SOURCE_NUMBER" />
+                <ScalarProperty Name="PRODUCT_ID" ColumnName="PRODUCT_ID" />
+                <ScalarProperty Name="SUSP_BY_COLL_FIJ" ColumnName="SUSP_BY_COLL_FIJ" />
+                <ScalarProperty Name="SUSP_BY_LIMITS_FIJ" ColumnName="SUSP_BY_LIMITS_FIJ" />
+                <ScalarProperty Name="DEST_NUM_FIJ" ColumnName="DEST_NUM_FIJ" />
+                <ScalarProperty Name="ACTIVATION_STATUS" ColumnName="ACTIVATION_STATUS" />
+                <ScalarProperty Name="DOC_NUMBER_LINE" ColumnName="DOC_NUMBER_LINE" />
+                <ScalarProperty Name="EQUIPMENT_INFO" ColumnName="EQUIPMENT_INFO" />
+                <ScalarProperty Name="ROUTING_NUMBER" ColumnName="ROUTING_NUMBER" />
+                <ScalarProperty Name="DOMAIN_NAME_PROVIDER" ColumnName="DOMAIN_NAME_PROVIDER" />
+                <ScalarProperty Name="LAST_RENEWAL_DATE" ColumnName="LAST_RENEWAL_DATE" />
+                <ScalarProperty Name="FINAL_ACTIVATION_DATE" ColumnName="FINAL_ACTIVATION_DATE" />
+                <ScalarProperty Name="APN" ColumnName="APN" />
+                <ScalarProperty Name="USE_STATIC_IP" ColumnName="USE_STATIC_IP" />
+                <ScalarProperty Name="STATIC_IP_ADDR" ColumnName="STATIC_IP_ADDR" />
+                <ScalarProperty Name="QOS" ColumnName="QOS" />
+                <ScalarProperty Name="DISCONNECT_REASON" ColumnName="DISCONNECT_REASON" />
+                <ScalarProperty Name="NUMBER_OF_LINES" ColumnName="NUMBER_OF_LINES" />
+                <ScalarProperty Name="RAZON_DISCON_EMPR" ColumnName="RAZON_DISCON_EMPR" />
+                <ScalarProperty Name="ROAM_PERFIL_ALERTA" ColumnName="ROAM_PERFIL_ALERTA" />
+                <ScalarProperty Name="SPEND_LIMIT" ColumnName="SPEND_LIMIT" />
+                <ScalarProperty Name="NUMERO_CORTO_PARA_RPV" ColumnName="NUMERO_CORTO_PARA_RPV" />
+                <ScalarProperty Name="M2M_APN" ColumnName="M2M_APN" />
+                <ScalarProperty Name="LINEA_MOVIL_GROUP_ID" ColumnName="LINEA_MOVIL_GROUP_ID" />
+                <ScalarProperty Name="AA_TRIBE_ID" ColumnName="AA_TRIBE_ID" />
+                <ScalarProperty Name="TARIFF_ID" ColumnName="TARIFF_ID" />
+                <ScalarProperty Name="RPV_MEMBER_PROFILE" ColumnName="RPV_MEMBER_PROFILE" />
+                <ScalarProperty Name="RPVPERFIL_PARA_EMPRESA" ColumnName="RPVPERFIL_PARA_EMPRESA" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Universo_NC">
+            <EntityTypeMapping TypeName="AuxiliarModel.Universo_NC">
+              <MappingFragment StoreEntitySet="Universo_NC">
+                <ScalarProperty Name="TOP_PRODUCT" ColumnName="TOP_PRODUCT" />
+                <ScalarProperty Name="L1" ColumnName="L1" />
+                <ScalarProperty Name="L2" ColumnName="L2" />
+                <ScalarProperty Name="L3" ColumnName="L3" />
+                <ScalarProperty Name="L4" ColumnName="L4" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
